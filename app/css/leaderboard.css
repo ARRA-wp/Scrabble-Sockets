@@ -1,0 +1,19 @@
+#leaderboard {
+  width: 95%;
+  height: 100%;
+  overflow-y: scroll;
+  border: solid gray 2px;
+}
+
+#leaderboard h2 {
+  margin: 3px !important;
+}
+
+#leaderboard ol {
+  columns: 1;
+  margin: 5px;
+}
+
+.challenge-btn {
+  margin-left: 1vw;
+}

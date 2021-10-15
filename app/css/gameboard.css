@@ -1,0 +1,131 @@
+#gameboard {
+  display: grid;
+  margin: 2vh;
+  max-height: 65vh;
+  justify-self: center;
+}
+
+#gameboard.S {
+  grid-template-columns: repeat(11, min(5.5vh, 4.5vw));
+  grid-template-rows: repeat(11, min(5.5vh, 4.5vw));
+}
+#gameboard.M {
+  grid-template-columns: repeat(15, min(4.5vh, 3.5vw));
+  grid-template-rows: repeat(15, min(4.5vh, 3.5vw));
+}
+#gameboard.L {
+  grid-template-columns: repeat(19, min(3.5vh, 2.5vw));
+  grid-template-rows: repeat(19, min(3.5vh, 2.5vw));
+}
+
+
+.square {
+  background-color: #fdf7e3;
+  border: solid black 1px;
+  position: relative;
+}
+
+.square.TW {
+  background-color: #d62828;
+}
+
+.square.DW {
+  background-color: #ff8da1;
+}
+
+.square.TL {
+  background-color: #4361ee;
+}
+
+.square.DL {
+  background-color: #48cae4;
+}
+
+.square.CENTER {
+  background-color: pink;
+}
+
+.overlay-good {
+  /* position: absolute; */
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(102, 255, 102, 0.5)
+}
+
+.overlay-bad {
+  /* position: absolute; */
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.5)
+}
+
+.red {
+  color: red;
+}
+
+.board-square {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(240, 200, 160, 0.85);
+  position: relative;
+}
+
+.letter {
+  font-family: 'Ropa Sans';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  margin: 0;
+  font-size: 200%;
+  user-select: none;
+}
+
+.letter.S {
+  font-size: 225%;
+}
+
+.letter.L {
+  font-size: 100%;
+}
+
+.letter-score {
+  font-family: 'Ropa Sans';
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  margin: 0;
+  user-select: none;
+}
+
+.modifier {
+  position: absolute;
+  color: white;
+  font-family: 'Ropa Sans';
+  margin: 0;
+  font-size: 110%;
+  bottom: 2px;
+  left: 2px;
+  user-select: none;
+}
+
+.modifier.L {
+  font-size: 80%;
+}
+
+.letter-score.L {
+  font-size: 80%;
+}
+
+.modifier.S {
+  font-size: 120%;
+}
+
+.letter-score.S {
+  font-size: 120%;
+}

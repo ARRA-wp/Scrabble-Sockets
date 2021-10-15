@@ -1,0 +1,63 @@
+/* **************************
+ * Simultaneous Scrabble CSS
+ * Created by Ben Cuan
+ * ************************** */
+
+.chatbox {
+  width: 95%;
+  height: 90%;
+  min-width: 35vw;
+  max-height: 70vh;
+  padding: 1.2rem;
+  border: solid gray 2px;
+}
+
+.chatbox .chat-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  height: 95%;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+}
+
+.chatbox .chat-list li {
+  padding: 2px;
+  margin: 2px;
+}
+
+.chatbox .chat-list li.blue {
+  color: #1b47e5;
+}
+
+.chatbox .chat-list li.purple {
+  color: #9b59b6;
+}
+
+.chatbox .chat-list li.red {
+  color: #fa5b79;
+}
+.chatbox .chat-list li.orange {
+  color: #faaa50;
+}
+.chatbox .chat-list li.green {
+  color: #49b800;
+}
+
+/* .chatbox .chat-list li.system:before {
+  content: "» ";
+} */
+
+.chatbox .chat-input {
+  pointer-events: all;
+  box-sizing: border-box;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-top: 1px solid #DDD;
+  outline: none;
+  height: 5vh;
+  z-index: 50;
+  transition-duration: 0.7s;
+}

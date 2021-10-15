@@ -1,0 +1,26 @@
+{
+  "projectName": "simultaneous-scrabble",
+  "projectOwner": "simultaneous-scrabble",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 80,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "64bitpandas",
+      "name": "Ben Cuan",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/15005763?s=460&u=5084daa55e8059e7e86b41ae41ce1c5a83bb44e6&v=4",
+      "profile": "https://bencuan.me",
+      "contributions": [
+        "code",
+        "ideas",
+        "review",
+        "test"
+      ]
+    }
+  ],
+  "contributorsPerLine": 8
+}

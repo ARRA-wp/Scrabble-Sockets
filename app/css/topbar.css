@@ -1,0 +1,127 @@
+#topbar {
+  background-color: #ff8da1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+}
+
+#topbar.playing {
+  background-color: #a3ff87;
+}
+
+#topbar.notyourturn {
+  background-color: #8EBEF5;
+}
+
+#topbar.challenging {
+  background-color: #ffaf47;
+}
+
+#topbar .progress {
+  position: absolute;
+  opacity: 0.5;
+  height: 5vh;
+  width: 100%;
+  z-index: 0;
+  transition: width 1s linear;
+}
+
+.progress.playing {
+  background-color: #47991c;
+}
+
+.progress.challenging {
+  background-color: #ed8421;
+}
+
+.progress.notyourturn {
+  background-color: #4361EE;
+}
+
+#logo-img {
+  height: 4vh;
+  z-index: 10;
+}
+
+#topbar h1 {
+  margin: 0;
+  padding-left: 3vw;
+  font-weight: 500;
+}
+
+#timer {
+  align-content: center;
+  font-size: 200%;
+  font-weight: 500;
+  z-index: 10;
+}
+
+#timer.low {
+  color: #ff4517;
+  font-weight: bold;
+}
+
+.topbar-btn {
+  text-decoration: none;
+  height: 3vh;
+  width: 45%;
+  padding: 0.5vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: black;
+  font-size: large;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  vertical-align: middle;
+  z-index: 10;
+}
+
+.topbar-btn:active,
+.topbar-btn:hover {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+  color: black;
+}
+
+.leave-btn {
+  background-color: #fa5b79;
+  border-bottom: 2px solid #ED0732;
+  box-shadow: inset 0 -2px #ED0732;
+  -webkit-box-shadow: inset 0 #ED0732;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.25);
+  justify-self: right;
+  margin-right: 5vw;
+}
+
+.leave-btn:active,
+.leave-btn:hover {
+  background: #ED0732;
+  color: white;
+}
+
+.start-btn {
+  background-color: #90ee90;
+  border-bottom: 2px solid #47991c;
+  box-shadow: inset 0 -2px #47991c;
+  -webkit-box-shadow: inset 0 #47991c;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.25);
+  margin-left: 5vw;
+}
+
+.start-btn:active,
+.start-btn:hover {
+  background: #47991c;
+  color: white;
+}
