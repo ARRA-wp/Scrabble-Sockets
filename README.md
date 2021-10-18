@@ -10,3 +10,9 @@ y listo, diviertete, en el server, tan solo coloca tu ip publica, o localhost, y
 Ejemplo:
 
 localhost:3000
+
+
+Hecho por:
+
+Yaniz Sanchez Diego Nathan
+Ramirez Alvarez Andres Rafael
