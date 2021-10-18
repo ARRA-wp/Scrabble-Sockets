@@ -25,24 +25,24 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Credentials', 'true');
   next();
 }, express.static(__dirname, { dotfiles: 'allow' }));
-// If you need a backend, e.g. an API, add your custom backend-specific middleware here
+
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 
-// In production we need to pass these values in instead of relying on webpack
+
 setup(app, {
   outputPath: resolve(process.cwd(), 'build'),
   publicPath: '/',
 });
 
-// get the intended host and port number, use localhost and port 3000 if not provided
+
 const customHost = argv.host || process.env.HOST;
-const host = customHost || null; // Let http.Server use its default IPv6/4 host
+const host = customHost || null; 
 const prettyHost = customHost || 'localhost';
 
-// use the gzipped bundle
+
 app.get('*.js', (req, res, next) => {
-  req.url = req.url + '.gz'; // eslint-disable-line
+  req.url = req.url + '.gz'; 
   res.set('Content-Encoding', 'gzip');
   next();
 });

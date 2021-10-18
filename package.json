@@ -1,10 +1,10 @@
 {
-  "name": "simultaneous-scrabble",
+  "name": "Scrabble",
   "version": "1.0.0",
-  "description": "A 2-10 player Scrabble game",
+  "description": "Scrabble :3",
   "repository": {
     "type": "git",
-    "url": "git://github.com/64bitpandas/SimultaneousScrabble.git"
+    "url": "https://github.com/ARRA-wp/Scrabble-Sockets.git"
   },
   "engines": {
     "npm": ">=5",

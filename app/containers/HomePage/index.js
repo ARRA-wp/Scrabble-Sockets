@@ -19,7 +19,7 @@ export default function HomePage(props) {
   const ghBanner = (
     <div className="github-banner">
       <a
-        href="https://github.com/64bitpandas/SimultaneousScrabble"
+        href="https://github.com/64bitpandas/Simultaneous"
         target="_blank"
       >
         {' '}
